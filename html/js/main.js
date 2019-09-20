@@ -7,14 +7,16 @@ var UnstackedApp = ( function () {
 	
 	var remote = "http://unstacked.dxlab.sl.nsw.gov.au/";
 	
-	var USE_REMOTE = uGet("remote", true);
+	var USE_REMOTE = uGet("remote", false);
 	
 	var PUB_IMG_CACHE_PATH = (USE_REMOTE ? remote : "" ) + "cache/imgs/covers/";
-	var NON_PUB_IMG_CACHE_PATH = (USE_REMOTE ? remote : "" ) + "cache/imgs/acms.sl.nsw.gov.au/";
-
-	var SERVICE_PATH = (USE_REMOTE ? remote  : "" ) + "php/";
-	var HISTORICAL_DATA_PATH = SERVICE_PATH + "get_data.php"; // "data/dump.json?b=2";
-	var DATA_PATH = SERVICE_PATH + "get_views.php";
+  //	var NON_PUB_IMG_CACHE_PATH = (USE_REMOTE ? remote : "" ) + "cache/imgs/acms.sl.nsw.gov.au/";
+  var NON_PUB_IMG_CACHE_PATH = (USE_REMOTE ? remote : "" ) + "cache/";
+  
+  var SERVICE_PATH = (USE_REMOTE ? remote  : "" ) + "php/";
+  //	var DATA_PATH = SERVICE_PATH + "get_views.php";
+  // var HISTORICAL_DATA_PATH = SERVICE_PATH + "get_data.php"; // "data/dump.json?b=2";
+	var DATA_PATH = SERVICE_PATH + "data/Durham.json?b=2";
 	
 	var DataSources = {
 		BOTH: 	{value:0, label:"Both"},
@@ -169,7 +171,7 @@ var UnstackedApp = ( function () {
 	
 	var DEBUG_LABELS = uGet("debug_labels", false);
 	
-	var DEBUG = uGet("debug", false);
+	var DEBUG = uGet("debug", true);
 	var TRACE = uGet("trace", false);
 	var SHOW_STATUS = uGet("status", DEBUG);
 	
@@ -2447,7 +2449,7 @@ var UnstackedApp = ( function () {
 	}
 	
 	SL_Tz_Date.prototype.getZoneAbbreviation = function() {
-		return this.use_moment ? moment.tz(this.zone).zoneAbbr() : "AEST";
+		return this.use_moment ? moment.tz(this.zone).zoneAbbr() : "BST";
 	}
 				
 	SL_Tz_Date.prototype.toLocaleTimeString = function() {
@@ -2635,9 +2637,9 @@ var UnstackedApp = ( function () {
 	
 	SLO.prototype.getLocationURL = function() {
 		if(this.published) {
-			return "http://library.sl.nsw.gov.au/search~S2?/" + this.uri + "&srchanddisc=1";
+      return "http://library.sl.nsw.gov.au/search~S2?/" + this.uri; // + "&srchanddisc=1";
 		}else{
-			return "http://acmssearch.sl.nsw.gov.au/search/itemDetailPaged.cgi?" + this.uri + "&srchanddisc=1";
+      return "http://discover.durham.ac.uk/" + this.uri + "&srchanddisc=1";
 		}
 	};
 	

@@ -1,0 +1,37 @@
+{
+  "count": 1,
+  "error": false,
+  "page": 0,
+  "total_pages": 1,
+  "since": "2019-09-20 18:47:31",
+  "now": "2019-09-20 18:57:31",
+  "taken": 0.0025818347930908,
+  "trans": "2016-01-29 18:47:31",
+  "views": [
+    {
+      "view_date": "2016-01-29 18:48:00",
+      "title": "Durham Cathedral",
+      "creator": "Ebdon, C. (Christopher), d. 1824",
+      "orig_uri": "itemID=844762&dcl=235106",
+      "url": "",
+      "img_r": "img/cathedral.png",
+      "img_t": "img/cathedral.png",
+      "mat_type": "1 print : engraving",
+      "isbn": "",
+      "dewey": "",
+      "call_num": "",
+      "dig_no": "",
+      "work_date": "ca. 1769",
+      "location": [
+        "Durham City"
+      ],
+      "topics": [
+        "Durham City - Pictorial works - Durham Cathedral, interior - 1769",
+        "Choir stalls"
+      ],
+      "pub": "London : printed for I. & J. Taylor, No 56, High Holborn. Publish'd as the act directs",
+      "date": "2019-09-20 18:48:00",
+      "uri": "44DUR_VU1:CSCOP_ALL:44DUR_LMS_DS.b28796159"
+    }
+  ]
+}
