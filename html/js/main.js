@@ -16,9 +16,11 @@ var UnstackedApp = ( function () {
   var SERVICE_PATH = (USE_REMOTE ? remote  : "" ) + "php/";
   //	var DATA_PATH = SERVICE_PATH + "get_views.php";
   // var HISTORICAL_DATA_PATH = SERVICE_PATH + "get_data.php"; // "data/dump.json?b=2";
-	var DATA_PATH = SERVICE_PATH + "data/Durham.json?b=2";
 	
-	var DataSources = {
+  //var DATA_PATH = SERVICE_PATH + "data/Durham.json?b=2";
+  var DATA_PATH = SERVICE_PATH + "data/dump.json";
+
+  var DataSources = {
 		BOTH: 	{value:0, label:"Both"},
 		UNPUB:	{value:1, label:"Non-published"}, 	//  (ACMS)
 		PUB:		{value:2, label:"Published"} 			//  (Millenium)		
