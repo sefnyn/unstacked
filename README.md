@@ -6,7 +6,7 @@ Created by [Adam Hinshaw](http://adamhinshaw.com) and [Elisa Lee](http://elisale
 
 Demo: http://unstacked.dxlab.sl.nsw.gov.au
 
-**Requires a JSON feed.  Not yet implemented.  Currently runs with static JSON data.
+**Requires a JSON feed.  Not yet implemented.  Currently runs on localhost with static JSON data in the html directory.  Configure your Apache HTTPD to serve files from ../unstacked/html.
 
 ### Technology
 
