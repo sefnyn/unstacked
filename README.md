@@ -1,10 +1,12 @@
 # Unstacked
 
-*A time-based visualisation of materials people are accessing from the State Library of NSW collection.*
-
-http://unstacked.dxlab.sl.nsw.gov.au
+A time-based visualisation of materials people are accessing from Durham University Library**.
 
 Created by [Adam Hinshaw](http://adamhinshaw.com) and [Elisa Lee](http://elisalee.net) for the 2016 State Library of New South Wales DX Lab Fellowship.
+
+Demo: http://unstacked.dxlab.sl.nsw.gov.au
+
+**Requires a JSON feed.  Not yet implemented.  Currently runs with static JSON data.
 
 ### Technology
 
